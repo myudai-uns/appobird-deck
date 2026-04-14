@@ -714,25 +714,66 @@ body{
   <span class="section-label" style="color:var(--dark)">PRICING</span>
   <h2>料金・コスト比較</h2>
   <div class="pricing-sub">一般的な新規商談の獲得単価は1.5万〜5万円と言われています。</div>
-  <div class="pricing-comparison">
-    <div class="price-box general">
-      <div class="box-label" style="color:var(--gray)">一般的な商談獲得</div>
-      <div class="box-title">獲得単価の相場</div>
-      <div class="price-num" style="color:var(--dark2)">1.5<span style="font-size:48px">〜</span>5</div>
-      <div class="price-unit" style="color:var(--dark2)">万円 <span style="font-size:20px;color:var(--gray)">/ 件</span></div>
-      <div class="price-detail" style="color:var(--gray)">広告・交流会・紹介等<br>施策ごとにコストが変動<br>安定供給の保証なし</div>
+
+  <!-- comparison table -->
+  <div style="display:grid;grid-template-columns:240px 1fr 60px 1fr;align-items:stretch;gap:0;margin-top:8px">
+
+    <!-- row labels -->
+    <div style="display:flex;flex-direction:column;justify-content:space-between;padding-right:20px">
+      <div style="height:60px"></div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;border-bottom:1px solid #eee;padding:16px 0">
+        <span style="font-size:22px;font-weight:900;color:var(--dark)">月間商談件数</span>
+      </div>
+      <div style="flex:1;display:flex;align-items:center;justify-content:flex-end;padding:16px 0">
+        <span style="font-size:22px;font-weight:900;color:var(--dark)">獲得単価</span>
+      </div>
     </div>
-    <div class="vs-circle">VS</div>
-    <div class="price-box ours">
-      <div class="box-label">アポバード</div>
-      <div class="box-title">月額固定プラン</div>
-      <div class="price-num">5</div>
-      <div class="price-unit">万円 <span style="font-size:20px;opacity:.7">/ 月（税別）</span></div>
-      <div class="price-detail">毎月3件の商談を安定創出<br>1件あたり約16,667円<br>営業工数・広告費ゼロ</div>
+
+    <!-- general -->
+    <div class="price-box general" style="display:flex;flex-direction:column;padding:28px 24px">
+      <div class="box-label" style="color:var(--gray);text-align:center;margin-bottom:16px">一般的な商談獲得</div>
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:1px solid #ddd;padding-bottom:16px">
+        <div style="font-family:'Noto Sans JP',sans-serif;font-weight:900;font-size:52px;color:var(--dark2);line-height:1">不安定</div>
+        <div style="font-size:15px;color:var(--gray);margin-top:8px">月によって0件の場合も</div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:16px">
+        <div style="display:flex;align-items:baseline">
+          <span class="mont w900" style="font-size:72px;color:var(--dark2)">1.5</span>
+          <span style="font-size:36px;color:var(--dark2);margin:0 4px">〜</span>
+          <span class="mont w900" style="font-size:72px;color:var(--dark2)">5</span>
+        </div>
+        <div style="font-size:22px;font-weight:900;color:var(--dark2)">万円 <span style="font-size:16px;color:var(--gray)">/ 件</span></div>
+      </div>
     </div>
+
+    <!-- VS -->
+    <div style="display:flex;align-items:center;justify-content:center">
+      <div class="vs-circle">VS</div>
+    </div>
+
+    <!-- appobird -->
+    <div class="price-box ours" style="display:flex;flex-direction:column;padding:28px 24px">
+      <div class="box-label" style="text-align:center;margin-bottom:16px">アポバード</div>
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:1px solid rgba(253,123,0,.3);padding-bottom:16px">
+        <div style="display:flex;align-items:baseline">
+          <span class="mont w900" style="font-size:80px;color:var(--orange)">3</span>
+          <span style="font-size:28px;font-weight:900;color:var(--white);margin-left:4px">件</span>
+          <span style="font-size:18px;color:var(--beige);opacity:.7;margin-left:4px">/ 月</span>
+        </div>
+        <div style="font-size:15px;color:var(--beige);opacity:.8;margin-top:4px">毎月安定して商談を創出</div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:16px">
+        <div style="display:flex;align-items:baseline">
+          <span class="mont w900" style="font-size:72px;color:var(--orange)">5</span>
+        </div>
+        <div style="font-size:22px;font-weight:900;color:var(--white)">万円 <span style="font-size:16px;opacity:.7">/ 月（税別）</span></div>
+      </div>
+    </div>
+
   </div>
-  <div class="pricing-bottom">
-    <div class="highlight-box">月額5万円 × 毎月3件 ＝ <span class="mont w900">16,667</span>円／件</div>
+
+  <div class="pricing-bottom" style="margin-top:20px">
+    <div class="highlight-box">月額5万円 ÷ 毎月3件 ＝ <span class="mont w900">16,667</span>円／件</div>
   </div>
   <span class="page-num" style="color:var(--dark)">8</span>
 </section>
